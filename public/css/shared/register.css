@@ -1,0 +1,39 @@
+.body-wrapper {
+    margin: 1rem;
+}
+.register-form-wrapper {
+    padding: 1rem;
+}
+
+label {
+    padding: 0;
+}
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem #6dc9c8;
+}
+
+.validatorErrorsList .validatorErrors {
+    font-size: 12px;
+    list-style-type: none;
+    padding: 4px 4px;
+    margin: 8px 4px;
+    background-color: white;
+    color: #333;
+    border-top: 3px solid red;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px 4px rgb(1, 25, 68);
+}
+
+/* Media Queries  */
+@media (max-width: 768px) {
+    #front-banner {
+        width: 280px;
+        height: 300px;
+    }
+    .body-wrapper {
+        margin: 0;
+    }
+    .register-form-wrapper {
+        padding: 0;
+    }
+}

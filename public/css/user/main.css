@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+main {
+    padding: 16px 24px;
+    color: #333;
+}
+
+/* Font-Sizes  */
+.fs-40 {
+    font-size: 40px;
+}
+.fs-32 {
+    font-size: 32px;
+}
+.fs-30 {
+    font-size: 30px;
+}
+.fs-28 {
+    font-size: 28px;
+}
+.fs-26 {
+    font-size: 26px;
+}
+.fs-24 {
+    font-size: 24px;
+}
+.fs-22 {
+    font-size: 22px;
+}
+.fs-20 {
+    font-size: 20px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.fs-16 {
+    font-size: 16px;
+}
+.fs-14 {
+    font-size: 14px;
+}
+
+/* Font Weight  */
+.bold {
+    font-weight: bold;
+}
+.semibold {
+    font-weight: 700;
+}
+.meduim {
+    font-weight: 600;
+}
+.regular {
+    font-weight: 400;
+}
+
+.col-4 {
+    padding: 0 6px;
+}
+.col-sm-6 {
+    padding: 0 12px;
+}
+
+/* Media Queries  */
+
+@media (max-width: 768px) {
+    main {
+        padding: 4px;
+    }
+    .fs-28 {
+        font-size: 18px;
+    }
+    .header .header_navbar {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .header .fs-40 {
+        font-size: 24px;
+    }
+    .nav-wrapper {
+        font-size: 20px;
+    }
+}

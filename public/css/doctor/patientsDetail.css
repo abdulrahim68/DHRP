@@ -1,0 +1,239 @@
+.collapsible {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+}
+
+.active,
+.collapsible:hover {
+    background-color: white;
+}
+
+.content-wrapper {
+    padding-top: 20px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+}
+.spaceFix {
+    padding-top: 1rem;
+}
+.patient-body {
+    padding: 8px 18px;
+}
+.patient-body p {
+    word-break: break-all;
+}
+.addNew {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    cursor: pointer;
+}
+#addButtonSVG {
+    filter: drop-shadow(0 12px 12px rgba(0, 0, 0, 0.3));
+}
+
+button.collapsible {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    border-radius: 24px;
+    border-bottom: 5px solid #6dc9c8;
+    box-shadow: 1px 2px 12px 3px rgb(224, 224, 224);
+}
+
+button.collapsible.active,
+button.collapsible:hover {
+    background-color: white;
+}
+
+button.collapsible::after {
+    content: "\002B";
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.collapsible.active::after {
+    content: "\2212";
+}
+.row {
+    --bs-gutter-x: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 12px 4px rgb(239, 239, 239);
+    min-height: 64px;
+    border-radius: 8px;
+}
+.wrapper:last-child {
+    margin-bottom: 64px;
+}
+.content:hover {
+    box-shadow: 2px 2px 12px 4px rgb(204, 204, 204);
+    cursor: pointer;
+}
+.content p {
+    margin-bottom: 0;
+    padding: 2px;
+}
+.content .btn {
+    width: 68px;
+}
+.patient-detail {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 16px;
+}
+.patient-detail .id {
+    display: flex;
+    flex-direction: row;
+    margin: 0 8px;
+}
+.patient-detail .name {
+    display: flex;
+    flex-direction: row;
+    margin: 0 8px;
+}
+.patient-detail .date {
+    display: flex;
+    flex-direction: row;
+    margin: 0 8px;
+}
+.patient-action {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 8px;
+}
+.patient-action .view {
+    margin: 2px 8px;
+}
+.patient-action .end {
+    margin: 2px 8px;
+}
+.btn:focus {
+    box-shadow: none;
+}
+.btn-view {
+    border: 2px solid #6dc9c8;
+    color: #6dc9c8;
+    border-radius: 24px;
+}
+.btn-view:hover {
+    background-color: #6dc9c8;
+    color: white;
+}
+.btn-end {
+    border: 2px solid #df0b0b;
+    color: #df0b0b;
+    border-radius: 24px;
+}
+.btn-end:hover {
+    background-color: #df0b0b;
+    color: white;
+}
+.btn-dismiss {
+    border: 2px solid #707070;
+    color: #707070;
+    border-radius: 24px;
+}
+.btn-dismiss:hover {
+    background-color: #707070;
+    color: white;
+}
+.btn-download {
+    border-radius: 24px;
+    padding: 7px 14px;
+    /* height: 83px; */
+    /* width: 109px; */
+    border: 2px solid #008956;
+    text-decoration: none;
+    color: #008956;
+}
+.btn-download:hover {
+    background-color: #008956;
+    color: white;
+    text-decoration: none;
+}
+.row {
+    --bs-gutter-x: 0;
+}
+.modal-body .text {
+    text-align: justify;
+}
+#addButtonSVG:hover {
+    transition: transform 0.3s linear;
+    transform: translateY(-5px);
+}
+
+/* status */
+.status-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.status {
+    background-color: #6dc9c8;
+    padding: 8px;
+    color: white;
+    border-radius: 12px;
+}
+/* media-queries */
+@media (max-width: 768px) {
+    body {
+        height: 100vh;
+    }
+    .content {
+        height: fit-content;
+    }
+    .patient-detail {
+        margin: 0;
+        margin-left: 4px;
+    }
+    .patient-detail .id {
+        margin: 4px 8px;
+    }
+    .patient-detail .name {
+        margin: 4px 8px;
+    }
+    .patient-action .view {
+        margin: 2px 2px;
+        width: 100%;
+    }
+    .patient-action .end {
+        margin: 2px 2px;
+        width: 100%;
+    }
+    .modal-dialog-centered {
+        min-height: calc(100% - 8rem);
+    }
+
+    .modal-dialog-scrollable {
+        height: calc(100% - 6rem);
+    }
+
+    .modal-dialog {
+        margin: 0.5rem;
+        margin-top: 5rem;
+    }
+}

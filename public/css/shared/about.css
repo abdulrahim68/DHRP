@@ -1,0 +1,62 @@
+/* about csse */
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 8px 18px;
+    color: black;
+    background-color: white;
+    border-bottom: 10px solid #ffbbbd;
+    box-shadow: 4px 6px 12px 4px #0b243b;
+    border-radius: 20px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.title {
+    border-bottom: 5px solid #ffbbbd;
+    font-size: 20px;
+    font-weight: bold;
+}
+.aboutInfo {
+    padding-top: 15px;
+}
+.card-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.guide .guide-head {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.guide-body {
+    padding: 12px;
+}
+.guide-body li {
+    list-style: circle;
+    margin: 16px 4px;
+}
+
+@media (max-width: 576px) {
+}
+@media (max-width: 450px) {
+    .navbar .fs-32 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1210px) {
+    .navbar .icons {
+        margin-left: -20px;
+    }
+}
+@media (max-width: 1125px) {
+    .navbar .icons {
+        margin-left: -50px;
+    }
+}

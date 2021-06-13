@@ -1,0 +1,137 @@
+.profile,
+.account {
+    margin-top: 14px;
+    --bs-gutter-x: 0;
+    word-break: break-all;
+}
+p {
+    margin-bottom: 0px;
+}
+.edit-profile-icon {
+    font-size: 26px;
+    color: #f8a1a4;
+    height: 32px;
+    width: 32px !important;
+    cursor: pointer;
+}
+.edit-medical-icon {
+    font-size: 26px;
+    color: #f8a1a4;
+    height: 32px;
+    width: 32px !important;
+    cursor: pointer;
+}
+.profile .heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    border-radius: 24px;
+    padding: 8px 18px;
+    border-radius: 32px;
+    /* border: 3px solid #ffc0c2; */
+    box-shadow: 4px 6px 12px 4px rgb(224, 214, 214);
+}
+
+.profile .heading span {
+    margin-left: 12px;
+    width: fit-content;
+    border-bottom: 4px solid #ffc0c2;
+}
+.account .heading p {
+    margin-left: 12px;
+    width: fit-content;
+    width: fit-content;
+    border-bottom: 4px solid #ffc0c2;
+}
+a.change-btn {
+    height: 24px;
+    width: 56px !important;
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: #fff;
+    color: #f8a1a4;
+    border-radius: 24px;
+    border: 1px solid #f8a1a4;
+}
+.change-btn:hover {
+    color: #fff;
+    background-color: #f8a1a4;
+}
+.profilesaveButton-container {
+    margin: 8px;
+    text-align: center;
+}
+#profilesaveButton {
+    display: none;
+    width: 86px;
+    padding: 6px 12px;
+    border-radius: 24px;
+    border: 2px solid #ffc0c2;
+    color: #ffc0c2;
+}
+#profilesaveButton:hover {
+    background-color: #ffc0c2;
+    color: #fff;
+}
+.medicalsaveButton-container {
+    margin: 8px;
+    text-align: center;
+}
+#medicalsaveButton {
+    display: none;
+    width: 86px;
+    padding: 6px 12px;
+    border-radius: 24px;
+    border: 2px solid #ffc0c2;
+    color: #ffc0c2;
+}
+#medicalsaveButton:hover {
+    background-color: #ffc0c2;
+    color: #fff;
+}
+.validatorErrorsList .validatorErrors {
+    font-size: 12px;
+    list-style-type: none;
+    padding: 4px 4px;
+    margin: 8px 4px;
+    background-color: white;
+    color: #333;
+    border: 2px solid rgb(156, 156, 156);
+    border-top: 3px solid red;
+    border-radius: 8px;
+}
+.status-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.status {
+    background-color: #ffc0c2;
+    padding: 8px;
+    color: white;
+    border-radius: 12px;
+}
+.form-label {
+    font-weight: bold;
+}
+.col-sm-4 {
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    form {
+        padding: 8px;
+    }
+    /* .col-4,
+    .col-8 {
+        padding-right: 0px;
+    } */
+    .col-sm-4 {
+        margin-bottom: 12px;
+    }
+}

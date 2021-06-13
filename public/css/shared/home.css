@@ -1,0 +1,295 @@
+/* html {
+    font-size: 62.5%;
+} */
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.navbar {
+    background-color: #ffc0c2;
+}
+.navbar button:focus {
+    outline: none;
+}
+.navbar-collapse {
+    position: relative;
+    left: 140px;
+}
+.navbar .nav-item {
+    margin: 0 32px;
+}
+.navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 50px;
+}
+.nav-link:hover {
+    text-decoration: none;
+}
+.navbar-brand:hover {
+    text-decoration: none;
+}
+.row {
+    margin: 0;
+}
+
+.main_header_left {
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main_header_right {
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.container-fluid-2 {
+    background: url("../../images/shared/home/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.main_header_left .title {
+    font-weight: bold;
+    text-shadow: 4px 4px 4px #333;
+}
+.main_header_left .features-item {
+    list-style-type: none;
+}
+.main_header_left p {
+    text-shadow: 4px 4px 4px #333;
+}
+/* .carousel-row {
+    margin: 0;
+    padding: 4rem;
+    overflow-x: hidden;
+}
+.carousel {
+    height: 400px;
+    width: 100%;
+    box-shadow: 8px 8px 16px 8px #0b243b;
+    border-radius: 24px;
+}
+.carousel-inner img {
+    height: 100%;
+    border-radius: 24px;
+    height: 100%;
+} */
+
+.card-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+.card {
+    height: 280px;
+    width: 300px;
+    box-shadow: 8px 8px 16px 8px #0b243b;
+    border-radius: 24px;
+    list-style: none;
+    margin: 1rem;
+    color: #0b243b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.card .link {
+    width: 100%;
+    margin-top: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.card .link button {
+    margin: 0 4rem;
+    font-size: 2rem;
+}
+.card .link button a:hover {
+    text-decoration: none;
+}
+/* buttons */
+
+.btn-login {
+    background-image: linear-gradient(
+        to right,
+        #02aab0 0%,
+        #00cdac 51%,
+        #02aab0 100%
+    );
+}
+.btn-login {
+    margin: 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 4px;
+    display: block;
+}
+
+.btn-login:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-reg {
+    background-image: linear-gradient(
+        to right,
+        #fcb2b4 0%,
+        #f7d5d5 51%,
+        #f8abaf 100%
+    );
+}
+.btn-reg {
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 4px;
+    display: block;
+}
+
+.btn-reg:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-fluid footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: green;
+    height: fit-content;
+}
+.container-fluid .footer-div {
+    width: 100%;
+    position: absolute;
+    bottom: 4px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.container-fluid .footer-social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.footerback {
+    background-color: #6dc9c8;
+}
+.footer-svg {
+    bottom: -20px;
+}
+.container-fluid .footer-social i {
+    margin: 12px;
+}
+.footer-text {
+    color: #ffffff;
+}
+.container-fluid .footer-social i:hover {
+    cursor: pointer;
+    filter: drop-shadow(10px 8px 8px rgba(0, 0, 0, 0.4));
+}
+
+.validatorErrorsList .validatorErrors {
+    font-size: 12px;
+    list-style-type: none;
+    padding: 4px 4px;
+    margin: 8px 4px;
+    background-color: white;
+    color: #333;
+    border-top: 3px solid red;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px 4px rgb(1, 25, 68);
+}
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        left: 10px;
+    }
+    .navbar .nav-item {
+        margin: 0;
+    }
+}
+@media (max-width: 768px) {
+    .navbar .fs-32 {
+        font-size: 32px;
+    }
+    .text-box {
+        padding-left: 1rem;
+    }
+    .main_header_left {
+        height: auto;
+        margin: 5rem 0;
+        padding: 0px;
+    }
+    .main_header_left .fs-32 {
+        font-size: 16px;
+    }
+    .main_header_right {
+        height: auto;
+    }
+    .container-fluid-2 {
+        min-height: calc(100vh - 40px);
+        background-size: cover;
+        background-position: left;
+    }
+}
+@media (max-width: 576px) {
+    .navbar .fs-32 {
+        font-size: 20px;
+    }
+
+    .main_header_left .fs-20 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 330px) {
+    .navbar .fs-32 {
+        font-size: 16px;
+    }
+    .footer-social {
+        font-size: 16px;
+    }
+}
+
+/********************* for navbar *******************/
+@media (max-width: 576px) {
+}
+@media (max-width: 450px) {
+    .navbar .fs-40 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1210px) {
+    .navbar .icons {
+        margin-left: -20px;
+    }
+}
+@media (max-width: 1125px) {
+    .navbar .icons {
+        margin-left: -50px;
+    }
+}
